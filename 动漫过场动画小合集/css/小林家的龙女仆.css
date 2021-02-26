@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.Allbox {
+  height: 100vh;
+  width: 100vw;
+  background: #fbe847;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Allbox .box {
+  height: 150px;
+  width: 120px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+  transition: 0.5s;
+  perspective: 100;
+  -webkit-perspective: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Allbox .box .a,
+.Allbox .box .b {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;/*隐藏背面*/
+  font-size: 5em;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Allbox .box .b {
+  transform: rotateY(180deg);
+}
+.Allbox .box:hover {
+  transform: rotateY(180deg);
+}
+.Allbox .box1 {
+  animation: box 0.5s;
+  animation-fill-mode: forwards;
+  /*保留样式*/
+  animation-delay: 0.8s;
+  /*延迟时间*/
+}
+.Allbox .box2 {
+  animation: box 0.5s;
+  animation-fill-mode: forwards;
+  /*保留样式*/
+  animation-delay: 1.6s;
+  /*延迟时间*/
+}
+.Allbox .box3 {
+  animation: box 0.5s;
+  animation-fill-mode: forwards;
+  /*保留样式*/
+  animation-delay: 2.4s;
+  /*延迟时间*/
+}
+.Allbox .box4 {
+  animation: box 0.5s;
+  animation-fill-mode: forwards;
+  /*保留样式*/
+  animation-delay: 3.2s;
+  /*延迟时间*/
+}
+.Allbox .box5 {
+  animation: box 0.5s;
+  animation-fill-mode: forwards;
+  /*保留样式*/
+  animation-delay: 4s;
+  /*延迟时间*/
+}
+@keyframes box {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}

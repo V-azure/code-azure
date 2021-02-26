@@ -1,0 +1,677 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/*整体区块*/
+.Allbox {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  perspective: 600;
+  -webkit-perspective: 600;
+  perspective-origin: center;
+  -webkit-perspective-origin: center;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  /*左*/
+  /*右*/
+}
+.Allbox .Leftbox {
+  height: 90%;
+  width: 30%;
+  padding: 2%;
+  margin-left: 8%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateY(30deg);
+}
+.Allbox .Leftbox .Leftbox-top {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 8px;
+  padding: 2% 2% 2% 4%;
+  font-weight: bold;
+}
+.Allbox .Leftbox .Leftbox-top .lv {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 5px;
+  transition: 2s;
+  cursor: pointer;
+}
+.Allbox .Leftbox .Leftbox-top .lv:hover {
+  letter-spacing: 0.25em;
+  background: rgba(129, 191, 241, 0.39);
+}
+.Allbox .Leftbox .Leftbox-top .lv .div {
+  display: flex;
+}
+.Allbox .Leftbox .Leftbox-top .lv .lv1 {
+  color: #c8c8c8;
+  font-size: 0.8em;
+}
+.Allbox .Leftbox .Leftbox-top .lv .lv2 {
+  color: white;
+  font-size: 2.3em;
+}
+.Allbox .Leftbox .Leftbox-top .lv .lv3 {
+  width: 28%;
+  height: 3px;
+  background: linear-gradient(70deg, #27c0fe 50%, #505050 50%);
+}
+.Allbox .Leftbox .Leftbox-top .name {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+}
+.Allbox .Leftbox .Leftbox-top .name .name1 {
+  color: white;
+  font-size: 1.3em;
+  transition: 1.5s;
+}
+.Allbox .Leftbox .Leftbox-top .name .name2 {
+  color: white;
+  font-size: 1.2em;
+  transition: 1.5s;
+}
+.Allbox .Leftbox .Leftbox-top .name:hover .name1 {
+  letter-spacing: 0.3em;
+  color: red;
+}
+.Allbox .Leftbox .Leftbox-top .name:hover .name2 {
+  letter-spacing: 0.3em;
+  color: red;
+}
+.Allbox .Leftbox .Leftbox-center {
+  width: 100%;
+  height: 330px;
+  padding: 2%;
+  margin-bottom: 8px;
+  position: relative;
+}
+.Allbox .Leftbox .Leftbox-center .hideall,
+.Allbox .Leftbox .Leftbox-center .music {
+  width: 30px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.Allbox .Leftbox .Leftbox-center .hideall img,
+.Allbox .Leftbox .Leftbox-center .music img {
+  width: 100%;
+  transition: 1.5s;
+}
+.Allbox .Leftbox .Leftbox-center .hideall:hover,
+.Allbox .Leftbox .Leftbox-center .music:hover {
+  background: rgba(129, 191, 241, 0.52);
+}
+/*.Allbox .Leftbox .Leftbox-center .hideall:hover img {
+  离谱 这里有谷歌浏览器的一个bug
+  transform: skew(90deg);
+}*/
+.Allbox .Leftbox .Leftbox-center .music {
+  margin-top: 30px;
+  margin-left: 20px;
+  position: relative;
+}
+.Allbox .Leftbox .Leftbox-center .music .p {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 700%;
+  /*离谱...*/
+  overflow: hidden;
+  white-space: nowrap;
+  /*禁止换行*/
+  animation: music 5s linear infinite;
+}
+.Allbox .Leftbox .Leftbox-center .nav {
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Allbox .Leftbox .Leftbox-center .nav .box {
+  height: 80px;
+  width: 80px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 6px 10px #1e4a5c, -6px -6px 10px #cecece;
+  padding: 2%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.Allbox .Leftbox .Leftbox-center .nav .box .title {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bolder;
+  margin-bottom: 25%;
+}
+.Allbox .Leftbox .Leftbox-center .nav .box .tip {
+  color: #c8c8c8;
+  font-size: 0.5em;
+}
+.Allbox .Leftbox .Leftbox-center .nav .box:hover {
+  background: rgba(129, 191, 241, 0.52);
+  transform: skew(10deg);
+}
+.Allbox .Leftbox .Leftbox-bottom {
+  width: 100%;
+  height: 220px;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Allbox .Leftbox .Leftbox-bottom .banner {
+  width: 340px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.Allbox .Leftbox .Leftbox-bottom .banner .banner-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.Allbox .Leftbox .Leftbox-bottom .banner .banner-img img {
+  width: 100%;
+  animation: lb 3s infinite alternate;
+}
+.Allbox .Leftbox .Leftbox-bottom .banner:hover img {
+  filter: brightness(1.2);
+}
+.Allbox .Leftbox .Leftbox-bottom .comment {
+  display: flex;
+  height: 30px;
+  width: 340px;
+  margin-top: 10px;
+  background: rgba(255, 252, 252, 0.404);
+  cursor: pointer;
+}
+.Allbox .Leftbox .Leftbox-bottom .comment .comment-img {
+  height: 100%;
+  width: 15%;
+  transition: 0.8s;
+}
+.Allbox .Leftbox .Leftbox-bottom .comment .comment-img img {
+  width: 85%;
+}
+.Allbox .Leftbox .Leftbox-bottom .comment .comment-img:hover {
+  background: rgba(129, 191, 241, 0.52);
+}
+.Allbox .Leftbox .Leftbox-bottom .comment .comment-text {
+  height: 100%;
+  width: 85%;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.Allbox .Leftbox .Leftbox-bottom .comment:hover .comment-text {
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 360px;
+  padding-bottom: 150%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  line-height: 1.8em;
+}
+.Allbox .Rightbox {
+  height: 90%;
+  width: 36%;
+  padding: 2%;
+  margin-right: 8%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: rotateY(-30deg);
+  perspective: 600;
+  -webkit-perspective: 600;
+}
+.Allbox .Rightbox .Rightbox-top {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Allbox .Rightbox .Rightbox-top .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 150px;
+  background: rgba(0, 0, 0, 0.466);
+  cursor: pointer;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-top .box .box-img {
+  width: 40px;
+}
+.Allbox .Rightbox .Rightbox-top .box .box-img img {
+  width: 100%;
+}
+.Allbox .Rightbox .Rightbox-top .box span {
+  color: white;
+  font-size: 1em;
+}
+.Allbox .Rightbox .Rightbox-top .box .add {
+  width: 30px;
+  height: 100%;
+  color: white;
+  font-size: 2em;
+  font-weight: bolder;
+  background: rgba(57, 164, 252, 0.52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Allbox .Rightbox .Rightbox-top .box:hover {
+  background: rgba(129, 191, 241, 0.52);
+}
+.Allbox .Rightbox .Rightbox-center {
+  width: 100%;
+  height: 530px;
+  margin-bottom: 8px;
+}
+.Allbox .Rightbox .Rightbox-center .tt {
+  display: flex;
+  align-items: center;
+}
+.Allbox .Rightbox .Rightbox-center .tt .dcimg {
+  width: 80px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+.Allbox .Rightbox .Rightbox-center .tt .dcimg img {
+  width: 100%;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-center .tt .dcimg img:hover {
+  transform: skew(-20deg);
+  width: 110%;
+}
+.Allbox .Rightbox .Rightbox-center .tt span {
+  color: white;
+  font-size: 1.3em;
+  margin-right: 35%;
+  transition: 1.5s;
+}
+.Allbox .Rightbox .Rightbox-center .tt span:hover {
+  font-size: 5em;
+  color: #fa5d5d;
+}
+.Allbox .Rightbox .Rightbox-center .tt .yximg {
+  width: 50px;
+  margin-right: 3%;
+  cursor: pointer;
+}
+.Allbox .Rightbox .Rightbox-center .tt .yximg img {
+  width: 100%;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-center .tt .yximg img:hover {
+  transform: skew(-20deg);
+  width: 110%;
+}
+.Allbox .Rightbox .Rightbox-center .tt .szimg {
+  width: 50px;
+  cursor: pointer;
+}
+.Allbox .Rightbox .Rightbox-center .tt .szimg img {
+  width: 100%;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-center .tt .szimg img:hover {
+  transform: skew(20deg);
+  width: 110%;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ldimg {
+  width: 80px;
+  position: relative;
+  top: 15%;
+  right: 5%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ldimg .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 200%;
+  background: #ffffff;
+  transform: skewX(-30deg);
+  box-shadow: 0 0 50px #ffffff;
+  z-index: 1;
+  animation: mask 2s infinite;
+  display: block;
+  filter: blur(5px);
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ldimg img {
+  width: 100%;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ldimg:hover img {
+  transform: rotateY(360deg);
+  width: 150%;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ldimg:hover {
+  overflow: visible;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ldimg:hover .mask {
+  display: none;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk {
+  width: 260px;
+  height: 100%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.582);
+  padding: 1% 3%;
+  cursor: pointer;
+  transition: 1.5s;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk .left {
+  width: 50%;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk .left h1 {
+  color: white;
+  font-size: 2.5em;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk .left .tip {
+  color: #bbb6b6;
+  font-size: 1em;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk .left .nd {
+  color: #3ba6d5;
+  font-size: 1em;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk .right h2 {
+  color: white;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk .right span {
+  color: #bbb6b6;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .ttk:hover {
+  transform: rotateY(30deg);
+  width: 120%;
+  background: rgba(129, 191, 241, 0.52);
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .kllimg {
+  color: white;
+  font-weight: bold;
+  font-size: 0.6em;
+  width: 40px;
+  position: relative;
+  top: 10%;
+  left: 6%;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .kllimg img {
+  width: 100%;
+}
+.Allbox .Rightbox .Rightbox-center .boxline1 .kllimg:hover {
+  transform: scale(1.4);
+  color: #27c0fe;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-top: 20px;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 .rw {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  cursor: pointer;
+  transition: 1.5s;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 .rw .left {
+  background: #f4f1e6;
+  height: 100%;
+  width: 25%;
+  padding: 1%;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 .rw .left span {
+  color: #bbb6b6;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 .rw .right {
+  width: 75%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 .rw .right p {
+  color: #d8d5d5;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 .rw .right img {
+  width: 10%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 .rw:hover {
+  transform: rotateY(30deg);
+  width: 130%;
+  background: rgba(93, 175, 243, 0.52);
+  color: #fa5959;
+}
+.Allbox .Rightbox .Rightbox-center .boxline2 .null1 {
+  height: 36px;
+  width: 75px;
+  background: rgba(0, 0, 0, 0.514);
+  margin-left: 3%;
+  position: relative;
+  top: 20px;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin-top: 20px;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 .box {
+  position: relative;
+  height: 100%;
+  width: 110px;
+  background: rgba(0, 0, 0, 0.562);
+  margin-left: 10px;
+  padding: 1%;
+  cursor: pointer;
+  transition: 1.5s;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 .box h1 {
+  color: white;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 .box span {
+  color: #bbb6b6;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 .box div {
+  height: 15px;
+  width: 30px;
+  background: #fec90d;
+  font-size: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 .box:hover {
+  background: rgba(129, 191, 241, 0.52);
+  transform: rotateY(30deg);
+  text-shadow: 15px 10px 5px #ffffff;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 .box:hover h1 {
+  color: black;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 .box:hover span {
+  color: black;
+}
+.Allbox .Rightbox .Rightbox-center .boxline3 .null2 {
+  height: 90px;
+  width: 75px;
+  background: rgba(0, 0, 0, 0.514);
+  position: relative;
+  left: 7.5%;
+  top: -10px;
+}
+.Allbox .Rightbox .Rightbox-center .boxline4 {
+  height: 50px;
+  width: 250px;
+  padding: 1% 2%;
+  background: rgba(255, 255, 255, 0.733);
+  line-height: 50px;
+  margin-top: 20px;
+  margin-left: 30%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-center .boxline4 .gh {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  transition: 1.5s;
+}
+.Allbox .Rightbox .Rightbox-center .boxline4 span {
+  color: #747474;
+  transition: 1.5s;
+}
+.Allbox .Rightbox .Rightbox-center .boxline4:hover {
+  background: rgba(129, 191, 241, 0.52);
+  width: 100%;
+  margin-left: -2%;
+}
+.Allbox .Rightbox .Rightbox-center .boxline4:hover .gh {
+  color: white;
+}
+.Allbox .Rightbox .Rightbox-center .boxline4:hover span {
+  color: white;
+}
+.Allbox .Rightbox .Rightbox-bottom {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Allbox .Rightbox .Rightbox-bottom .li {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-bottom .li h1 {
+  color: white;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-bottom .li span {
+  color: #bbb6b6;
+  transition: 0.8s;
+}
+.Allbox .Rightbox .Rightbox-bottom .li:hover {
+  background: rgba(129, 191, 241, 0.52);
+  box-shadow: 5px 5px 10px black;
+  text-shadow: 15px 10px 5px #ffffff;
+}
+.Allbox .Rightbox .Rightbox-bottom .li:hover h1 {
+  color: black;
+}
+.Allbox .Rightbox .Rightbox-bottom .li:hover span {
+  color: black;
+}
+@keyframes lb {
+  0% {
+    position: relative;
+    left: 0;
+  }
+  30% {
+    /*逆播放 增加延时*/
+    left: 0;
+  }
+  70% {
+    /*加快速度*/
+    left: -99%;
+  }
+  100% {
+    position: relative;
+    left: -100%;
+  }
+}
+@keyframes music {
+  0% {
+    top: 0;
+    padding-left: 0;
+  }
+  100% {
+    top: 0;
+    padding-left: 1000%;
+  }
+}
+@keyframes mask {
+  from {
+    left: -15%;
+    top: -25%;
+  }
+  to {
+    left: 190%;
+    top: 90%;
+  }
+}
+
+
+@media screen and (max-width:1000px){
+  .Allbox{
+    height: 722px;
+    width: 1536px;
+  }
+}
+
+/*jq调用*/
+.hide{
+  opacity: 0;
+}

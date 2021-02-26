@@ -1,0 +1,74 @@
+<!-- 适用于 大于720px -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美少女战士</title>
+  <link rel="stylesheet" href="css/美少女战士.css">
+</head>
+<body>
+  <div class="Allbox">
+    <div class="img"></div>
+    <div class="mask"></div>
+  </div>
+</body>
+</html>
+
+<!-- 另一种方法 不如上面这个
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .mask {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50em;
+      width: 100vw;
+      height: 100vh;
+      background: url(img/美少女战士/li.jpg);
+      background-size: cover;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: mask 5s;
+    }
+
+    @keyframes mask {
+      0% {
+        background-position: 0;
+      }
+
+      100% {
+        background-position: -100vw -30vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mask">
+    •
+  </div>
+</body>
+
+</html>
+
+-->
