@@ -1,0 +1,323 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:rgb(40,40,40);
+}
+
+section{
+    margin:auto;
+    padding-top: 50px;
+    padding: 45px 30px 20px 70px;
+    width: 75%;
+    background-color:rgb(20,21,22);
+    color: white;
+    border-right:2px solid rgb(255,238,34) ;
+}
+img{
+    width: 100%;
+}
+
+/*load*/
+.load{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 999999;
+}
+.l1{
+height: 33.333333%;
+width: 100%;
+background-color: rgb(132, 135, 138);
+}
+.l2{
+height: 33.333333%;
+width: 100%;
+background-color: rgb(132, 135, 138);
+}
+.l3{
+height: 33.333333%;
+width: 100%;
+background-color: rgb(132, 135, 138);
+}
+/*头部导航*/
+header{
+    height: 50px;
+    width: 100%;
+    background: rgba(55,55,55,0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    z-index: 9999;
+    padding: 1.5% 1% 1.5% 0.5%;
+}
+header img{
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+header img:hover{
+    -webkit-filter: brightness(2.5);
+            filter: brightness(2.5);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+header p{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.menupic{/*汉堡菜单的图片区块*/
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.menu{
+     width: 15%;
+     background-color:rgb(3,3,3);
+     position: absolute;
+     top: 55px;
+     left: 2%;
+     z-index: 9999;
+}
+.menu-text{/*汉堡菜单的文字区块*/
+    font-weight: bolder;
+    color: white;/***被超链接覆盖***/
+    line-height: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 0 0 3%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.menu-text a{
+    color: white;
+}
+.menu-text div[class^='line']{/*文字前的线;属性选择器选中class为line设置*/
+    width: 0px;
+    height: 3px;
+    background-color:rgb(34, 187,255);
+    margin-right: 5px;
+}
+.music{/*音乐区块*/
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 150px;
+    -webkit-animation: music 5s;
+            animation: music 5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    cursor: pointer;
+}
+.music img{
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+.music img:hover{
+    -webkit-filter: brightness(3);
+            filter: brightness(3);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+@-webkit-keyframes music{
+    from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes music{
+    from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+
+/*头部模块*/
+.head_top{
+    height: auto;
+    width: 100%;
+    padding: 10px 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+}
+.head_top h2{
+    font-size: 2.1em;
+}
+.head_top h2 span{
+    color: rgb(34, 187,255);
+}
+.head_bottom{
+    position: absolute;
+    right: 3%;
+}
+.hr{
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.hr0{
+    border-bottom: 3px solid white;
+    width: 8%;
+}
+.hr1{
+    border-bottom: 1.5px solid gray;
+    width: 92%;
+}
+.clear{
+    clear: both;
+}
+
+/*内容模块*/
+.body{
+    height: auto;
+}
+.img0{
+    margin:30px auto;
+    width: 90%;
+}
+.text{
+    height: auto;
+    line-height: 3em;
+    color: rgb(196, 196,196);
+    position: relative;
+}
+.text p{
+    margin-left: 50px;
+}
+.text .strong{
+    font-weight: bold;
+}
+.text .red{
+    color: red;
+}
+.textend{
+    line-height: 2em;
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+}
+
+
+/*页尾*/
+footer{
+	text-align: center;
+    letter-spacing: 5px;
+    padding-top: 18px;
+	padding-bottom: 18px;
+    -webkit-transition: 4s;
+    -o-transition: 4s;
+    transition: 4s;
+    color: white;
+}
+footer:hover{
+	background-color: rgb(24, 212, 236);
+    color: rgb(243, 53, 6);
+    cursor: wait;
+}
+/*返回顶部区块*/
+#backtop{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 8%;
+    bottom: 10%;
+    -webkit-transition: 1.5s;
+    -o-transition: 1.5s;
+    transition: 1.5s;
+    cursor: pointer;
+    background-color: rgb(141, 131, 17);
+}
+#backtop:hover{
+    background-color: rgb(255,238,34)
+}
+
+
+
+
+/*中等屏幕*/
+@media only screen and (max-width:1200px ) {
+/*返回顶部区块*/
+#backtop{
+    height: 50px;
+    width: 50px;
+    right: 5%;
+}
+}
+
+
+/*平板*/
+@media only screen and (max-width:992px ) {
+/*返回顶部区块*/
+#backtop{
+    height: 35px;
+    width: 35px;
+    right: 2%;
+}
+section{
+    padding: 5% 1% 2% 3%;
+    width: 85%;
+}
+/*内容模块*/
+.text{
+    line-height: 2em;
+}
+.text p{
+    margin-left: 5%;
+}
+}
+
+
+/*手机*/
+@media only screen and (max-width:768px ) {
+/*返回顶部区块*/
+#backtop{
+    height: 35px;
+    width: 35px;
+    right: 0.5%;
+}
+section{
+    width: 95%;
+}
+/*汉堡菜单*/
+.menu{
+     width: 45%;
+}
+/*内容模块*/
+.img0{
+    width: 100%;
+}
+}

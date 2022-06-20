@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HideのHtml</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .guodu{
+    	position: absolute;
+    	height: 100%;
+    	width: 100%;
+    	left: 0;
+    	top: 0;
+        overflow: hidden;
+        z-index: 100;
+        }
+        .guodu img{
+        width: 100%;
+        }
+        .all{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background:url(img/4969.gif_wh860.gif);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;/*3d盒模型*/
+            perspective:400;
+            -webkit-perspective: 400;
+            overflow: hidden;
+        }
+        #text{
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            transform: rotateX(30deg);
+            
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+    $(function () {
+        // $('.guodu').fadeOut(3000);
+        setTimeout(function () { $('.guodu').css({ display: "none" }) }, 4000)
+
+
+    })
+    </script>
+</head>
+<body>
+    <div class="guodu">
+        <img src="img/ezgif.com-gif-maker (1).gif" alt="">
+    </div>
+
+
+    <div class="all">
+        <marquee id="text" behavior="scroll" direction="up" scrollamount="4" width="99%">
+        𝐹𝒶𝓎𝑒：何は無事たﾞね全く<br> 𝒮𝓅𝓁𝓀𝑒:たまに故郷も 会いに行くのさ<br>
+            𝐹𝒶𝓎𝑒：昔の女は 今てﾞも君のことを考えてると思うたﾞったら 大間違いよ<br>𝒯𝑜𝓃𝒾𝑔𝒽𝓉 𝓉𝒽𝑒𝓎
+            𝓉𝓇𝒶𝒸𝑒 𝒶 𝒻𝓇𝒶𝑔𝒾𝓁𝑒 𝒸𝓊𝓇𝓋𝑒，𝒯𝒽𝑒 𝒹𝒾𝓂 𝒽𝑜𝓇𝒾𝓏𝑜𝓃 𝓉𝒽𝒶𝓉 𝓎𝑜𝓊 𝓈𝑒𝓇𝓋𝑒，𝐻𝑜𝓁𝓎
+            𝓂𝑜𝓋𝑒𝓂𝑒𝓃𝓉, 𝒽𝑜𝓁𝓎 𝓈𝑜𝓊𝓃𝒹，𝒜 𝓌𝒽𝒾𝓈𝓅𝑒𝓇 𝓇𝒾𝓈𝒾𝓃𝑔 𝒻𝓇𝑜𝓂 𝓉𝒽𝑒 𝑔𝓇𝑜𝓊𝓃𝒹，𝒯𝑜𝓃𝒾𝑔𝒽𝓉
+            𝓉𝒽𝑒𝓎 𝓉𝓇𝒶𝒸𝑒 𝒶 𝒻𝓇𝒶𝑔𝒾𝓁𝑒 𝒸𝓊𝓇𝓋𝑒，𝒯𝒽𝑒 𝒹𝒾𝓂 𝒽𝑜𝓇𝒾𝓏𝑜𝓃 𝓉𝒽𝒶𝓉 𝓎𝑜𝓊 𝓈𝑒𝓇𝓋𝑒，𝐻𝑜𝓁𝓎
+            𝓂𝑜𝓋𝑒𝓂𝑒𝓃𝓉, 𝒽𝑜𝓁𝓎 𝓈𝑜𝓊𝓃𝒹，𝒜 𝓌𝒽𝒾𝓈𝓅𝑒𝓇 𝓇𝒾𝓈𝒾𝓃𝑔 𝒻𝓇𝑜𝓂 𝓉𝒽𝑒 𝑔𝓇𝑜𝓊𝓃𝒹 0𝒯𝑜𝓃𝒾𝑔𝒽𝓉 𝓉𝒽𝑒𝓎
+            𝓉𝓇𝒶𝒸𝑒 𝒶 𝒻𝓇𝒶𝑔𝒾𝓁𝑒 𝒸𝓊𝓇𝓋𝑒，𝒯𝒽𝑒 𝒹𝒾𝓂 𝒽𝑜𝓇𝒾𝓏𝑜𝓃 𝓉𝒽𝒶𝓉 𝓎𝑜𝓊 𝓈𝑒𝓇𝓋𝑒，𝐻𝑜𝓁𝓎
+            𝓂𝑜𝓋𝑒𝓂𝑒𝓃𝓉, 𝒽𝑜𝓁𝓎 𝓈𝑜𝓊𝓃𝒹，𝒜 𝓌𝒽𝒾𝓈𝓅𝑒𝓇 𝓇𝒾𝓈𝒾𝓃𝑔 𝒻𝓇𝑜𝓂 𝓉𝒽𝑒 𝑔𝓇𝑜𝓊𝓃𝒹，𝒯𝑜𝓃𝒾𝑔𝒽𝓉
+            𝓉𝒽𝑒𝓎 𝓉𝓇𝒶𝒸𝑒 𝒶 𝒻𝓇𝒶𝑔𝒾𝓁𝑒 𝒸𝓊𝓇𝓋𝑒，𝒯𝒽𝑒 𝒹𝒾𝓂 𝒽𝑜𝓇𝒾𝓏𝑜𝓃 𝓉𝒽𝒶𝓉 𝓎𝑜𝓊 𝓈𝑒𝓇𝓋𝑒，𝐻𝑜𝓁𝓎
+            𝓂𝑜𝓋𝑒𝓂𝑒𝓃𝓉, 𝒽𝑜𝓁𝓎 𝓈𝑜𝓊𝓃𝒹，𝒜 𝓌𝒽𝒾𝓈𝓅𝑒𝓇 𝓇𝒾𝓈𝒾𝓃𝑔 𝒻𝓇𝑜𝓂 𝓉𝒽𝑒 𝑔𝓇𝑜𝓊𝓃𝒹 0 𝒯𝑜𝓃𝒾𝑔𝒽𝓉 𝓉𝒽𝑒𝓎
+            𝓉𝓇𝒶𝒸𝑒 𝒶 𝒻𝓇𝒶𝑔𝒾𝓁𝑒 𝒸𝓊𝓇𝓋𝑒，𝒯𝒽𝑒 𝒹𝒾𝓂 𝒽𝑜𝓇𝒾𝓏𝑜𝓃 𝓉𝒽𝒶𝓉 𝓎𝑜𝓊 𝓈𝑒𝓇𝓋𝑒，𝐻𝑜𝓁𝓎
+            𝓂𝑜𝓋𝑒𝓂𝑒𝓃𝓉, 𝒽𝑜𝓁𝓎 𝓈𝑜𝓊𝓃𝒹，𝒜 𝓌𝒽𝒾𝓈𝓅𝑒𝓇 𝓇𝒾𝓈𝒾𝓃𝑔 𝒻𝓇𝑜𝓂 𝓉𝒽𝑒 𝑔𝓇𝑜𝓊𝓃𝒹，𝒯𝑜𝓃𝒾𝑔𝒽𝓉
+            𝓉𝒽𝑒𝓎 𝓉𝓇𝒶𝒸𝑒 𝒶 𝒻𝓇𝒶𝑔𝒾𝓁𝑒 𝒸𝓊𝓇𝓋𝑒，𝒯𝒽𝑒 𝒹𝒾𝓂 𝒽𝑜𝓇𝒾𝓏𝑜𝓃 𝓉𝒽𝒶𝓉 𝓎𝑜𝓊 𝓈𝑒𝓇𝓋𝑒，𝐻𝑜𝓁𝓎
+            𝓂𝑜𝓋𝑒𝓂𝑒𝓃𝓉, 𝒽𝑜𝓁𝓎 𝓈𝑜𝓊𝓃𝒹，𝒜 𝓌𝒽𝒾𝓈𝓅𝑒𝓇 𝓇𝒾𝓈𝒾𝓃𝑔 𝒻𝓇𝑜𝓂 𝓉𝒽𝑒 𝑔𝓇𝑜𝓊𝓃𝒹
+        </marquee>
+    </div>
+</body>
+</html>
+
+<!--
+marquee 参数：
+BGColor：滚动文本框的背景颜色。
+Direction：滚动方向设置，可选择Left、Right、up和down。
+scrolldelay：每轮滚动之间的延迟时间，越大越慢。
+scrollamount：一次滚动总的时间量，数字越小滚动越慢。
+Behaviour：滚动的方式设置，三种取值：Scroll（循环滚动） lide（单次滚动）、Alternate（来回滚动）。
+Align：文字的对齐方式设置。可选择Middle(居中)、Bottom(居下)还是Top(居上)。
+Width：滚动文本框的宽度，输入一个数值后从后面的单选框选择in Pixels(按像素)或是in Percent(按百分比)。
+Height：滚动文本框的高度，输入一个数值后从后面的单选框选择in Pixels(按像素)或是in Percent(按百分比)。
+loop：滚动次数。默认为infinite
+hspace、vspace：前后、上下的空行。
+onMouseOver='this.stop()' 鼠标放上去则暂停
+onMouseOut='this.start()' 鼠标移开继续滚动
+-->
