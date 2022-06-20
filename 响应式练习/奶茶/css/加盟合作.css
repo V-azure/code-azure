@@ -1,0 +1,284 @@
+img{
+  width: 100%;
+}
+.nav_2 a{
+  position: relative;
+  left: -19px;
+}
+.jm_one{
+  width: 100%;
+  height: auto;
+  min-height: 650px;
+  background: rgb(243, 243, 243);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.jm_one .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 36%;
+}
+.jm_one .box h2{
+  color: rgb(230, 190, 120);
+}
+.jm_one .box p{
+  color: #666;
+  line-height: 1.8em;
+}
+.jm_one .box .img{
+  width: 100%;
+}
+
+
+
+.jm_two{
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+}
+.jm_two .tit{
+  color: rgb(207, 160, 97);
+  text-align: center;
+  margin-top: 50px;
+}
+.jm_two .al{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jm_two .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  margin-top: 50px;
+  transition: 0.8s;
+}
+.jm_two .box h2{
+  text-align: center;
+}
+.jm_two .box .img{
+  width: 80px;
+}
+.jm_two .box .img .h{
+  display: none;
+}
+.jm_two .box p{
+  display: block;
+  border-top: 2px solid #666;
+  padding-top: 20px;
+}
+.jm_two .box:hover{
+  color: rgb(0, 122, 83);
+}
+.jm_two .box:hover .s{
+  display: none;
+}
+.jm_two .box:hover .h{
+  display: block;
+}
+.jm_two .box:hover p{
+  border-top: 2px solid rgb(0, 122, 83);
+}
+
+
+
+.jm_three{
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  background: url("../img/zhichi.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.jm_three .left{
+  width: 360px;
+  height: auto;
+}
+.jm_three .left ul li{
+  width: 100%;
+  height: 140px;
+  background: rgb(218, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.jm_three .left ul li .imgl{
+  height: 140px;
+  position: absolute;
+  right: -70px;
+  display: none;
+}
+.jm_three .left ul li .imgl img{
+  height: 100%;
+}
+.jm_three .left ul li img{
+  width: 50px;
+  margin-right: 20px;
+}
+.jm_three .left ul li span{
+  font-size: 15px;
+  font-weight: 500;
+}
+.jm_three .right{
+  width: 700px;
+}
+
+
+.jm_four{
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+.jm_four .tit {
+  color: rgb(207, 160, 97);
+  text-align: center;
+  margin-top: 50px;
+}
+.jm_four .backtop{
+  height: 45px;
+  width: 100%;
+  background: rgb(0, 122, 83);
+  position: relative;
+  bottom: -20px;
+  z-index: -1;
+}
+.jm_four .box{
+  width: 1200px;
+  height: auto;
+  min-height: 650px;
+  background: white;
+  border: 1px solid rgb(230, 190, 120);
+  box-shadow: 0 0 5px black;
+  margin: 0 auto;
+  padding: 3%;
+}
+.jm_four .box ul{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.jm_four .box ul li{
+  height: auto;
+  min-height: 80px;
+  width: 95%;
+  border-left: 2px solid rgb(230, 190, 120);
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+.jm_four .box ul li h3{
+  margin-bottom: 15px;
+  position: relative;
+  left: -9px;
+}
+.jm_four .box ul li h3::before{
+  content: "•";
+  color: rgb(230, 190, 120);
+  font-size: 1.8em;
+
+}
+.jm_four .box ul li p{
+  line-height: 1.7em;
+  color: #666;
+}
+
+
+
+
+.bg{
+  background: rgb(209, 163, 102) !important;
+}
+
+
+
+@media screen and (max-width:1000px){
+  .jm_one {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .jm_one .box {
+    width: 90%;
+  }
+
+
+  .jm_one .box p {
+    font-size: 1.3em;
+  }
+
+  .jm_one .box .img {
+    width: 80%;
+  }
+
+
+
+
+  .jm_two .al {
+    flex-direction: column;
+  }
+
+  .jm_two .box {
+    width: 70%;
+    height: 300px;
+    margin-right: 0px;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 122, 83);
+  }
+
+
+
+
+  .jm_three {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .jm_three .left {
+    width: 100%;
+  }
+
+  .jm_three .left ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+  .jm_three .left ul li {
+    height: 140px;
+  }
+
+  .jm_three .right {
+    width: 100%;
+  }
+  
+
+
+
+
+
+
+
+
+  .jm_four .box {
+    width: 100%;
+  }
+
+  .jm_four .box ul {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+  .jm_four .box ul li {
+    margin-right: 0;
+  }
+
+}
