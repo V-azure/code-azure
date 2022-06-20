@@ -1,0 +1,77 @@
+<!-- 
+  仿明日方舟游戏官网
+  大二期末作业
+ -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>黎明-Code2官网--登录</title>
+		<link href="css/denglujiemian.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/denglujiemian.js" ></script>
+	</head>
+	<body>
+		<audio autoplay="1" loop="1"><source src="audio/shengyuheiye.mp3"></source></audio>
+		<header>
+			<div class="h_img1"><img src="img/logo-cat.png" /></div>
+			<h1>黎明𝑪𝒐𝒅𝒆2</h1>
+			<div class="h_img2"><img src="img/yiwen.png" /></div>
+			<a class="contact" href="#">联系客服</a>
+		</header>
+		<section>
+		<div class="al">
+			
+			
+			<!--注册界面-->
+			<div id="register">
+				<h2>注册</h2>
+				<br />
+				<br />
+				<form action="" name="">
+					<ul>
+						<li><input type="text" placeholder="手机号" /></li>
+						<br />
+						<li><input type="password" placeholder="8-16位数字、字母、常用字符"/></li>
+					    <br />
+					    <li><input type="password" placeholder="确认密码"/></li>
+					    <br />
+					    <li><input type="text" placeholder="输入验证码" /><button class="Vcode">获取验证码</button></li>
+					    <li><input type="checkbox" />已阅读并同意<a href="#">协议</a></li>
+					    <div class="clear"></div>
+					    <a href="#"><input type="submit" value="注册" class="blogin" id="registerbtn"/></a>
+					</ul>
+				</form>
+			</div>
+
+			<div id="login">
+				<h2>登录</h2>
+				<br />
+				<br />
+				<form action="" name="">
+					<ul>
+						<li><input id="user" type="text" placeholder="请输入手机号或邮箱" /></li>
+						<br />
+						<li><input id="password" type="password" placeholder="请输入密码" /></li>
+						<br />
+						<a href="#" class="SMSlogin">使用短信验证码登录</a>
+						<div class="clear"></div>
+						<br />
+						<a href="#"><input type="submit" value="登录" class="blogin" id="loginbtn" /></a>
+					</ul>
+				</form>
+			</div>
+		</div>
+
+		
+
+			<div id="login_switch">
+				<p><a href="#login" id="zindex_login">登录</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="#register" id="zindex_register">注册</a>
+				</p>
+			</div>
+		</section>
+		<footer>36</footer>
+	</body>
+</html>
