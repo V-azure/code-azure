@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情报</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/qingbao.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/qingbao.js"></script>
+</head>
+<body>
+<div class="load">
+    <div class="l1"></div>
+    <div class="l2"></div>
+</div>
+
+    <header>
+        <div class="menupic"><img src="img/hanbaocaidan.png" alt=""></div>
+        <div class="menu">
+            <a href="zhujiemian.html">
+                <div class="menu-text m1">
+                    <div class="line1"></div>首页
+                </div>
+            </a>
+            <a href="#">
+                <div class="menu-text m2">
+                    <div class="line2"></div>情报
+                </div>
+            </a>
+            <a href="shijieguan.html">
+                <div class="menu-text m3">
+                    <div class="line3"></div>世界观
+                </div>
+            </a>
+            <a href="huiyixiangce.html">
+                <div class="menu-text m4">
+                    <div class="line4"></div>回忆相册
+                </div>
+            </a>
+            <a href="denglujiemian.html">
+                <div class="menu-text m5">
+                    <div class="line5"></div>个人中心
+                </div>
+            </a>
+        </div>
+       <div class="music" id="musicbtn"><img id="musicbtn" src="img/music.png" alt="" title="正在播放：初弦__ - 【补档】「公测」采购中心"></div>
+			<audio id="music" autoplay="1" loop="1"><source src="audio/budang.mp3"></source></audio>
+        <p><a href="denglujiemian.html"> 登录</a> |<a href="denglujiemian.html"> 注册</a><a href="#"> 联系客服</a></p>
+    </header>
+
+    <div class="vcon1 container">
+        <div class="row vtop">
+            <div class="vcol1 col-lg-12">
+            <a href="#"><div class="vtitle" id="newdiv">最新</div></a>
+            <a href="#"><div class="vtitle" id="noticediv">公告</div></a>
+            <a href="#"><div class="vtitle">活动</div></a>
+            <a href="#"><div class="vtitle">新闻</div></a>
+            </div>
+        </div>
+
+    <div class="row vbanner">
+        <div class="vbannercol col-lg-12">
+       
+        <div class="bannersw swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="img/banner1.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/banner2.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="img/banner3.png" alt=""></a></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="bannersp swiper-pagination"></div>
+        </div>
+
+        <div class="bannerswtext swiper-container swiper-no-swiping">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bannertext">
+                        <span>2020.11.01</span>
+                        <div class="clear"></div>
+                        <div class="bannerline"></div>
+                        <p>2020「感谢庆典」限时活动开启</p>
+                        <a href="#" class="vbannerbtn btnbtn-info" role="button">READ MORE+</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bannertext">
+                        <span>2020.11.01</span>
+                        <div class="clear"></div>
+                        <div class="bannerline"></div>
+                        <p>主线新章节EP08【怒号光明】开启！</p>
+                        <a href="#" class="vbannerbtn btnbtn-info" role="button">READ MORE+</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bannertext">
+                        <span>2020.11.16</span>
+                        <div class="clear"></div>
+                        <div class="bannerline"></div>
+                        <p>「燃灰行动」紧急直播计划开启</p>
+                        <a href="#" class="vbannerbtn btnbtn-info" role="button">READ MORE+</a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        
+        </div>
+        <!-- swiper的初始化（调用），写js里是没用的 -->
+        <script>
+            var mySwiperpic = new Swiper('.bannersw', {
+                loop: true, // 循环模式选项
+                speed: 2000,//轮播速度
+                autoplay: {//自动播放
+                    delay: 5000,//轮播时间
+                    stopOnLastSlide: false,//如果设置为true，当切换到最后一个slide时停止自动切换。（loop模式下无效）
+                    disableOnInteraction: false,//true触碰后停止自动轮播，false触碰后不停止
+                },
+                pagination: {//分页器
+                    el: '.bannersp',//必选，默认小点
+                }
+            })
+
+
+
+            var mySwipertip = new Swiper('.bannerswtext', {
+                    loop: true, // 循环模式选项
+                    effect: 'flip'
+                })
+                mySwiperpic.controller.control = mySwipertip; /*--关联两个swiper，实现点击pic，tip跟着pic一起切换--*/
+        </script>
+    </div>
+    <!-- ‘最新’区块 -->
+    <div class="row vbody new">
+        <a href="qingbao1.html">
+        <div class="vtd col-lg-4 col-md-6 col-xs-12">
+            <div class="bodytext">
+                <h3>公告</h3>
+                <span>2020.11.15</span>
+                <div class="clear"></div>
+                <div class="bodytextline"></div>
+                <p>[限定寻访·庆典]【勿忘我】限时寻访即将开启（情报1）</p>
+                <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+            </div>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="vtd col-lg-4 col-md-6 col-xs-12">
+            <div class="bodytext">
+                <h3>公告</h3>
+                <span>2020.11.25</span>
+                <div class="clear"></div>
+                <div class="bodytextline"></div>
+                <p>[活动]2020「感谢庆典」限时活动开启</p>
+                <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+            </div>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="vtd vtd3 col-lg-4 col-md-6 col-xs-12">
+            <div class="bodytext">
+                <h3>公告</h3>
+                <span>2020.11.11</span>
+                <div class="clear"></div>
+                <div class="bodytextline"></div>
+                <p>[明日方舟]11月11日16:00闪断更新公告</p>
+                <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+            </div>
+        </div>
+        </a>
+    </div>
+
+
+
+    <div class="row vbody new">
+        <a href="#">
+        <div class="vtd col-lg-4 col-md-6 col-xs-12">
+            <div class="bodytext">
+                <h3>公告</h3>
+                <span>2020.11.11</span>
+                <div class="clear"></div>
+                <div class="bodytextline"></div>
+                <p>[明日方舟]11月11日封禁处理公示</p>
+                <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+            </div>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="vtd col-lg-4 col-md-6 col-xs-12">
+            <div class="bodytext">
+                <h3>公告</h3>
+                <span>2020.11.04</span>
+                <div class="clear"></div>
+                <div class="bodytextline"></div>
+                <p>[明日方舟]11月04日封禁处理公示</p>
+                <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+            </div>
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="vtd vtd3 col-lg-4 col-md-6 col-xs-12">
+            <div class="bodytext">
+                <h3>公告</h3>
+                <span>2020.11.04</span>
+                <div class="clear"></div>
+                <div class="bodytextline"></div>
+                <p>[明日方舟]11月04日16:00闪断更新公告</p>
+                <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+            </div>
+        </div>
+        </a>
+    </div>
+
+
+    <!-- 公告区块 -->
+    <div class="row vbody notice">
+        <a href="#">
+            <div class="vtd col-lg-4 col-md-6 col-xs-12">
+                <div class="bodytext">
+                    <h3></h3>
+                    <span>2020.11.15</span>
+                    <div class="clear"></div>
+                    <div class="bodytextline"></div>
+                    <p>针不戳</p>
+                    <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+                </div>
+            </div>
+        </a>
+    
+        <a href="#">
+            <div class="vtd col-lg-4 col-md-6 col-xs-12">
+                <div class="bodytext">
+                    <h3></h3>
+                    <span>2020.11.25</span>
+                    <div class="clear"></div>
+                    <div class="bodytextline"></div>
+                    <p>针不戳</p>
+                    <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+                </div>
+            </div>
+        </a>
+    
+        <a href="#">
+            <div class="vtd vtd3 col-lg-4 col-md-6 col-xs-12">
+                <div class="bodytext">
+                    <h3></h3>
+                    <span>2020.11.11</span>
+                    <div class="clear"></div>
+                    <div class="bodytextline"></div>
+                    <p>针不戳</p>
+                    <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    
+    
+    <div class="row vbody notice">
+        <a href="#">
+            <div class="vtd col-lg-4 col-md-6 col-xs-12">
+                <div class="bodytext">
+                    <h3></h3>
+                    <span>2020.11.11</span>
+                    <div class="clear"></div>
+                    <div class="bodytextline"></div>
+                    <p>针不戳</p>
+                    <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+                </div>
+            </div>
+        </a>
+    
+        <a href="#">
+            <div class="vtd col-lg-4 col-md-6 col-xs-12">
+                <div class="bodytext">
+                    <h3></h3>
+                    <span>2020.11.04</span>
+                    <div class="clear"></div>
+                    <div class="bodytextline"></div>
+                    <p>针不戳</p>
+                    <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+                </div>
+            </div>
+        </a>
+    
+        <a href="#">
+            <div class="vtd vtd3 col-lg-4 col-md-6 col-xs-12">
+                <div class="bodytext">
+                    <h3></h3>
+                    <span>2020.11.04</span>
+                    <div class="clear"></div>
+                    <div class="bodytextline"></div>
+                    <p>针不戳</p>
+                    <a href="#" class="bodytextbtn btnbtn-info" role="button">READ MORE+</a>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="row">
+    <a href="#" class="vbtn btnbtn-info" role="button">→更多情报</a>
+    </div>
+    </div>
+    <div style="clear: both;"></div>
+    <footer>36</footer>
+</body>
+</html>

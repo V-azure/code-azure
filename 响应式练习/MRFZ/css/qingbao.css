@@ -1,0 +1,416 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(../img/bg-qb.jpg) no-repeat; 
+    background-size:cover;
+    background-position: center;
+}
+img{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+
+
+/*load*/
+.load{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 99999;
+    
+}
+.l1{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(33,182,249);
+}
+.l2{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(233, 72, 8);
+}
+
+/*头部导航*/
+header{
+    height: 50px;
+    width: 100%;
+    background: rgba(55,55,55,0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    z-index: 9999;
+    padding: 1.5% 1% 1.5% 0.5%;
+}
+header p{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+}
+header img{
+    width: 100%;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+header img:hover{
+    -webkit-filter: brightness(2.5);
+            filter: brightness(2.5);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+.menupic{/*汉堡菜单的图片区块*/
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.menu{
+     width: 15%;
+     background-color:rgb(3,3,3);
+     position: absolute;
+     top: 55px;
+     left: 2%;
+     z-index: 9999;
+}
+.menu-text{/*汉堡菜单的文字区块*/
+    font-weight: bolder;
+    color: white;/***被超链接覆盖***/
+    line-height: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 0 0 3%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.menu-text a{
+    color: white;
+}
+.menu-text div[class^='line']{/*文字前的线;属性选择器选中class为line设置*/
+    width: 0px;
+    height: 3px;
+    background-color:rgb(34, 187,255);
+    margin-right: 5px;
+}
+.music{/*音乐区块*/
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 150px;
+    -webkit-animation: music 5s;
+            animation: music 5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    cursor: pointer;
+}
+.music img{
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+}
+.music img:hover{
+    -webkit-filter: brightness(3);
+            filter: brightness(3);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+@-webkit-keyframes music{
+    from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes music{
+    from{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+
+.vcon1{/*大区块*/
+    padding-top: 60px;
+    width: 80%;
+}
+.vcon1 a{
+    text-decoration: none;
+}
+.vtop{/*第一行区块*/
+    height: 36px;
+    background-color: rgba(25,25,25,0.6);
+    margin-bottom: 10px;
+    border: 1px solid rgb(83,83,83);
+}
+.vtop .vcol1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+}
+.vtop .vcol1 .vtitle{
+    width: 56px;
+    height: 34px;
+    color: rgb(153,153,139);
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 34px;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+.vtop .vcol1 .vtitle:hover{
+    background-color: rgb(33,182,249);
+}
+
+
+.vbanner{/*banner轮播区块*/
+    background-color: rgba(25,25,25,0.6);
+    border: 1px solid rgb(83,83,83);
+    position: relative;
+}
+.vbannercol{/*终于找到你了，去掉左间隔*/
+    padding: 0;
+}
+.bannerswtext{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 30%;
+    padding: 1em 1.2em;
+}
+.bannertext span{
+    float: right;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color:rgb(255,238,34);
+    font-size: 1.5em;
+}
+.bannerline{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(88, 88, 88);
+}
+.bannertext p{
+    font-size: 1.2em;
+    color: rgb(137,137,137);
+    margin-top: 15px;
+}
+.bannertext .vbannerbtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:rgb(255,238,34);
+    padding: 0.1em 0.1em;
+    width: 50%;
+    text-align: right;
+}
+
+
+
+.vbody{/*文字区块*/
+    height: 178px;
+}
+.vtd{/*9个表格区块*/
+    height: 178px;
+    /* width: 33.3333333333333333333333333333%; *//**************习惯了加宽度**************/
+    background-color: rgba(25,25,25,0.6);
+    border: 1px solid rgb(83,83,83);
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+.vtd:hover{/*********************************hover优先级问题，改变的子元素要放在子元素属性的下面*********************************/
+    background-color: rgb(33,182,249);
+}
+.bodytext h3{
+    float: left;
+    color: rgb(33,182,249);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.vtd:hover h3{
+    color: black;
+}
+.bodytext span{
+    float: right;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color:rgb(137,137,137);
+    font-size: 1.5em;
+}
+.vtd:hover span{
+    color: black;
+}
+.bodytextline{
+    height: 3px;
+    width: 50px;
+    background-color:rgb(33,182,249);
+}
+.vtd:hover .bodytextline{
+    background: #000;
+}
+.bodytext p{
+    font-size: 1.15em;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+.vtd:hover p{
+    color: black;
+}
+.bodytext .bodytextbtn{
+    float: right;
+    background-color:rgb(33,182,249);
+    padding: 0.1em 0.1em;
+    width: 35%;
+    text-align: right;
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    font-weight: 500;
+}
+.vtd:hover .bodytextbtn{
+    background-color:#000;
+    color: white;
+}
+
+
+
+.vbtn{/*底端按钮*/
+    height: 36px;
+    width: 142px;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    float: right;/*父元素设flex子元素受影响*/
+    border: 1px solid rgb(33,182,249);
+    margin-top: 10px;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+.vbtn:hover{
+    background-color: rgb(33,182,249);
+}
+
+/*页尾*/
+footer{
+	text-align: center;
+    letter-spacing: 5px;
+    padding-top: 18px;
+	padding-bottom: 18px;
+    -webkit-transition: 4s;
+    -o-transition: 4s;
+    transition: 4s;
+    color: white;
+}
+footer:hover{
+	background-color: rgb(24, 212, 236);
+    color: rgb(243, 53, 6);
+    cursor: wait;
+}
+
+
+
+
+
+ 
+/*中等、小屏幕、平板*/
+@media screen and (max-width:992px){
+.menu{
+     width: 25%;
+}
+.vcon1{/*大区块*/
+    width: 90%;
+}
+/*banner轮播区块*/
+.vbanner{/*banner轮播区块*/
+    height: 250px;
+}
+.vbanner img{
+    width: auto;
+    height: 100%;
+}
+.bannerswtext{
+    padding: 0.3em 0.5em;
+}
+.bannertext span{
+    margin-top: 2.5px;
+    margin-bottom: 7.5px;
+}
+.bannertext p{
+    margin-top: 7.5px;
+    color: rgb(255,238,34);
+}
+.bannertext .vbannerbtn{
+    width: 70%;
+}
+
+.vtd3{
+    height: 178px;
+    width: 100%;
+}
+}
+
+@media screen and (max-width:576px){
+.menu{
+        width: 50%;
+    }
+.vcon1{/*大区块*/
+    width: 95%;
+}
+/*banner轮播区块*/
+.vbanner{/*banner轮播区块*/
+    height: 250px;
+}
+
+.bannertext .vbannerbtn{
+    width: 100%;
+}
+
+
+} 
